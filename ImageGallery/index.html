@@ -11,13 +11,23 @@
 
         <div class="product-img-small">
 
-            <img src="Images/img-1.jpg" alt="">
-            <img src="Images/img-2.jpg" alt="">
-            <img src="Images/img-3.jpg" alt="">
-            <img src="Images/img-4.jpg" alt="">
-            <img src="Images/img-5.jpg" alt="">
+            <img src="Images/img-1.jpg" alt="" onclick="myfuncton(this)">
+            <img src="Images/img-2.jpg" alt="" onclick="myfuncton(this)">
+            <img src="Images/img-4.jpg" alt="" onclick="myfuncton(this)">
+            <img src="Images/img-5.jpg" alt="" onclick="myfuncton(this)">
         </div>
 
+        <div class="img-container">
+
+            <img id="imagebox"src="Images/img-1.jpg">
+        </div>
     </div>
+
+    <script>
+        function myfuncton(smallimg){
+            var fullimg=document.getElementById("imagebox")
+            fullimg.src=smallimg.src;
+        }
+    </script>
 </body>
 </html>
