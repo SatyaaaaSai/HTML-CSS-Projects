@@ -42,3 +42,36 @@ nav ul li a {
     position: relative;
     padding: 10px;
 }
+nav ul li a::before {
+    content: '';
+    width: 100%;
+    height: 0px;
+    background-color:#8ab80c;
+    position: absolute;
+    z-index: -1;
+    left:0;
+    bottom: -5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: height 0.5s;
+}
+nav ul li a:hover::before{
+    height: 85px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis:50%;
+    position: relative;
+}
+.feature-img{
+    width:100%;
+    margin-top: 10px;
+}
+.thumbnail-img{
+    width:280px;
+    position: absolute;
+    bottom:10px;
+}
